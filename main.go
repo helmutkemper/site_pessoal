@@ -238,15 +238,17 @@ func updateData(w rpx.ProxyResponseWriter, r *rpx.ProxyRequest) {
 		return
 	}
 
-	if JsQueryListOutput[r.ExpRegMatches["queryName"]].(map[string]interface{})["regexp"].(string) != "" {
-		matched, err := regexp.MatchString(JsQueryListOutput[r.ExpRegMatches["queryName"]].(map[string]interface{})["regexp"].(string), r.R.URL.Path)
+	jsQueryListData := JsQueryListOutput.GetKey(r.ExpRegMatches["queryName"])
+
+	if jsQueryListData.(map[string]interface{})["regexp"].(string) != "" {
+		matched, err := regexp.MatchString(jsQueryListData.(map[string]interface{})["regexp"].(string), r.R.URL.Path)
 		if err != nil {
 			log.Criticalf("updateData.regexp.MatchString.error: %v\n", err.Error())
 			output.ToOutput(1, err, []int{}, w)
 			return
 		}
 		if matched == true {
-			re := regexp.MustCompile(JsQueryListOutput[r.ExpRegMatches["queryName"]].(map[string]interface{})["regexp"].(string))
+			re := regexp.MustCompile(jsQueryListData.(map[string]interface{})["regexp"].(string))
 			for k, v := range re.SubexpNames() {
 				if k == 0 || v == "" {
 					continue
@@ -262,15 +264,15 @@ func updateData(w rpx.ProxyResponseWriter, r *rpx.ProxyRequest) {
 
 	var db = mongodb.DbStt{}
 	db.Init("main")
-	db.Collection(JsQueryListOutput[r.ExpRegMatches["queryName"]].(map[string]interface{})["collection"].(string))
+	db.Collection(jsQueryListData.(map[string]interface{})["collection"].(string))
 
 	var query = mongodb.QueryStt{
-		Query:  db.ParserQuery(JsQueryListOutput[r.ExpRegMatches["queryName"]].(map[string]interface{})["query"], r.ExpRegMatches),
+		Query:  db.ParserQuery(jsQueryListData.(map[string]interface{})["query"], r.ExpRegMatches),
 		Update: rawMap,
 	}
 
-	if len(JsQueryListOutput[r.ExpRegMatches["queryName"]].(map[string]interface{})["select"].(bson.M)) != 0 {
-		query.Select = JsQueryListOutput[r.ExpRegMatches["queryName"]].(map[string]interface{})["select"].(bson.M)
+	if len(jsQueryListData.(map[string]interface{})["select"].(bson.M)) != 0 {
+		query.Select = jsQueryListData.(map[string]interface{})["select"].(bson.M)
 	}
 
 	if db.Count(&query) == 0 {
