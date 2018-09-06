@@ -717,8 +717,8 @@ func main() {
 		os.Mkdir("./static", 0755)
 	}
 
-	fs := http.FileServer(http.Dir("./static"))
-	http.Handle("/static/", http.StripPrefix("/static/", fs))
+	fs := http.FileServer(http.Dir("./static/site_original"))
+	http.Handle("/st", http.StripPrefix("/st", fs))
 
 	//http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {})
 	http.HandleFunc("/", rpx.ProxyFunc)
