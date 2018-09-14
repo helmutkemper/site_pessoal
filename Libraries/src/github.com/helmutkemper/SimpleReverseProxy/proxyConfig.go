@@ -107,6 +107,10 @@ Esta função adiciona novas rotas ao proxy
 }
 */
 
+func (el *ProxyConfig) ListenConfig(addrAndPort string) {
+	el.ListenAndServe = addrAndPort
+}
+
 // Esta função coloca a rota nova em 'ProxyNewRootConfig' e espera uma nova chamada em uma rota qualquer para que a
 // nova rota tenha efeito. Isso é transparente para o usuário final, mas, a rota não pode entrar em vigor durante o
 // processamento da rota anterior, ou o sistema trava, devido a mudança dos 'ponteiros'

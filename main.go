@@ -315,6 +315,29 @@ type Page struct {
 	Articles []Article
 }
 
+func tplFunc(w rpx.ProxyResponseWriter, r *rpx.ProxyRequest) {
+	data := map[string]interface{}{
+		"PageTitle":     "gOsm",
+		"MainTitle":     "Documentation",
+		"Title":         "gOsm server",
+		"Text":          "<p>É claro que a complexidade dos estudos efetuados talvez venha a ressaltar a relatividade das condições financeiras e administrativas exigidas. O incentivo ao avanço tecnológico, assim como a constante divulgação das informações garante a contribuição de um grupo importante na determinação das diretrizes de desenvolvimento para o futuro. Por outro lado, a contínua expansão de nossa atividade cumpre um papel essencial na formulação de todos os recursos funcionais envolvidos. No mundo atual, a estrutura atual da organização ainda não demonstrou convincentemente que vai participar na mudança das posturas dos órgãos dirigentes com relação às suas atribuições.</p><p>O que temos que ter sempre em mente é que a crescente influência da mídia acarreta um processo de reformulação e modernização das novas proposições. A prática cotidiana prova que o fenômeno da Internet oferece uma interessante oportunidade para verificação dos paradigmas corporativos. Todas estas questões, devidamente ponderadas, levantam dúvidas sobre se o surgimento do comércio virtual causa impacto indireto na reavaliação do sistema de formação de quadros que corresponde às necessidades. Caros amigos, o julgamento imparcial das eventualidades obstaculiza a apreciação da importância dos conhecimentos estratégicos para atingir a excelência.</p><p>Acima de tudo, é fundamental ressaltar que a percepção das dificuldades estende o alcance e a importância das direções preferenciais no sentido do progresso. A certificação de metodologias que nos auxiliam a lidar com o acompanhamento das preferências de consumo pode nos levar a considerar a reestruturação das formas de ação. Não obstante, a consolidação das estruturas maximiza as possibilidades por conta do fluxo de informações. Todavia, o novo modelo estrutural aqui preconizado prepara-nos para enfrentar situações atípicas decorrentes dos procedimentos normalmente adotados.</p><p>Percebemos, cada vez mais, que o comprometimento entre as equipes auxilia a preparação e a composição das condições inegavelmente apropriadas. Do mesmo modo, a adoção de políticas descentralizadoras estimula a padronização do processo de comunicação como um todo. Ainda assim, existem dúvidas a respeito de como a mobilidade dos capitais internacionais faz parte de um processo de gerenciamento do sistema de participação geral. Gostaria de enfatizar que o aumento do diálogo entre os diferentes setores produtivos agrega valor ao estabelecimento dos índices pretendidos.</p><p>É importante questionar o quanto a revolução dos costumes facilita a criação da gestão inovadora da qual fazemos parte. A nível organizacional, a necessidade de renovação processual promove a alavancagem dos modos de operação convencionais. O empenho em analisar o consenso sobre a necessidade de qualificação nos obriga à análise dos métodos utilizados na avaliação de resultados. Pensando mais a longo prazo, a valorização de fatores subjetivos exige a precisão e a definição de alternativas às soluções ortodoxas.</p><p>Evidentemente, a consulta aos diversos militantes não pode mais se dissociar dos níveis de motivação departamental. Podemos já vislumbrar o modo pelo qual o início da atividade geral de formação de atitudes possibilita uma melhor visão global do orçamento setorial. Nunca é demais lembrar o peso e o significado destes problemas, uma vez que a hegemonia do ambiente político desafia a capacidade de equalização do levantamento das variáveis envolvidas.</p>",
+		"CopyrightYear": "2018",
+		"CopyrightLink": "",
+		"CopyrightName": "Helmut Kemper",
+	}
+
+	tmpl := template.Must(template.New("index").ParseFiles(
+		"/home/hkemper/Dropbox/site_pessoal/static/site_original_template/docs/index.tmpl",
+		"/home/hkemper/Dropbox/site_pessoal/static/site_original_template/docs/bell.tmpl",
+		"/home/hkemper/Dropbox/site_pessoal/static/site_original_template/docs/mainMenu.tmpl",
+	),
+	)
+	err := tmpl.ExecuteTemplate(w, "index", &data)
+	if err != nil {
+		fmt.Printf("template.error: %v", err.Error())
+	}
+}
+
 func memory(w rpx.ProxyResponseWriter, r *rpx.ProxyRequest) {
 	var mem runtime.MemStats
 	runtime.GC()
@@ -711,33 +734,38 @@ func main() {
 		},
 	)
 
-	js.CronSupport.Start()
+	rpx.ProxyRootConfig.AddRouteFromFuncStt(
+		rpx.ProxyRoute{
+			Name: "memory",
+			Domain: rpx.ProxyDomain{
+				NotFoundHandle: rpx.ProxyRootConfig.ProxyNotFound,
+				ErrorHandle:    rpx.ProxyRootConfig.ProxyError,
+				Host:           "",
+			},
+			Path: rpx.ProxyPath{
+				Path:   "/template",
+				Method: "GET",
+				ExpReg: "^/template$",
+			},
+			ProxyEnable: false,
+			Handle: rpx.ProxyHandle{
+				Handle: tplFunc,
+			},
+		},
+	)
+
+	rpx.ProxyRootConfig.ListenConfig(":8080")
+	//rpx.ProxyRootConfig.Prepare()
+
+	//js.CronSupport.Start()
 
 	if _, err = os.Stat("./static"); os.IsNotExist(err) {
 		os.Mkdir("./static", 0755)
 	}
 
+	log.Criticalf("listen and server: %v", rpx.ProxyRootConfig.ListenAndServe)
+
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("./static"))))
-
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		data := map[string]interface{}{
-			"PageTitle":     "gOsm",
-			"MainTitle":     "Documentation",
-			"Title":         "gOsm server",
-			"Text":          "<p>É claro que a complexidade dos estudos efetuados talvez venha a ressaltar a relatividade das condições financeiras e administrativas exigidas. O incentivo ao avanço tecnológico, assim como a constante divulgação das informações garante a contribuição de um grupo importante na determinação das diretrizes de desenvolvimento para o futuro. Por outro lado, a contínua expansão de nossa atividade cumpre um papel essencial na formulação de todos os recursos funcionais envolvidos. No mundo atual, a estrutura atual da organização ainda não demonstrou convincentemente que vai participar na mudança das posturas dos órgãos dirigentes com relação às suas atribuições.</p><p>O que temos que ter sempre em mente é que a crescente influência da mídia acarreta um processo de reformulação e modernização das novas proposições. A prática cotidiana prova que o fenômeno da Internet oferece uma interessante oportunidade para verificação dos paradigmas corporativos. Todas estas questões, devidamente ponderadas, levantam dúvidas sobre se o surgimento do comércio virtual causa impacto indireto na reavaliação do sistema de formação de quadros que corresponde às necessidades. Caros amigos, o julgamento imparcial das eventualidades obstaculiza a apreciação da importância dos conhecimentos estratégicos para atingir a excelência.</p><p>Acima de tudo, é fundamental ressaltar que a percepção das dificuldades estende o alcance e a importância das direções preferenciais no sentido do progresso. A certificação de metodologias que nos auxiliam a lidar com o acompanhamento das preferências de consumo pode nos levar a considerar a reestruturação das formas de ação. Não obstante, a consolidação das estruturas maximiza as possibilidades por conta do fluxo de informações. Todavia, o novo modelo estrutural aqui preconizado prepara-nos para enfrentar situações atípicas decorrentes dos procedimentos normalmente adotados.</p><p>Percebemos, cada vez mais, que o comprometimento entre as equipes auxilia a preparação e a composição das condições inegavelmente apropriadas. Do mesmo modo, a adoção de políticas descentralizadoras estimula a padronização do processo de comunicação como um todo. Ainda assim, existem dúvidas a respeito de como a mobilidade dos capitais internacionais faz parte de um processo de gerenciamento do sistema de participação geral. Gostaria de enfatizar que o aumento do diálogo entre os diferentes setores produtivos agrega valor ao estabelecimento dos índices pretendidos.</p><p>É importante questionar o quanto a revolução dos costumes facilita a criação da gestão inovadora da qual fazemos parte. A nível organizacional, a necessidade de renovação processual promove a alavancagem dos modos de operação convencionais. O empenho em analisar o consenso sobre a necessidade de qualificação nos obriga à análise dos métodos utilizados na avaliação de resultados. Pensando mais a longo prazo, a valorização de fatores subjetivos exige a precisão e a definição de alternativas às soluções ortodoxas.</p><p>Evidentemente, a consulta aos diversos militantes não pode mais se dissociar dos níveis de motivação departamental. Podemos já vislumbrar o modo pelo qual o início da atividade geral de formação de atitudes possibilita uma melhor visão global do orçamento setorial. Nunca é demais lembrar o peso e o significado destes problemas, uma vez que a hegemonia do ambiente político desafia a capacidade de equalização do levantamento das variáveis envolvidas.</p>",
-			"CopyrightYear": "2018",
-			"CopyrightLink": "",
-			"CopyrightName": "Helmut Kemper",
-		}
-
-		tmpl := template.Must(template.New("index").ParseFiles("/home/hkemper/Dropbox/site_pessoal/static/site_original_template/docs/index.tmpl"))
-		err := tmpl.ExecuteTemplate(w, "index", &data)
-		if err != nil {
-			fmt.Printf("template.error: %v", err.Error())
-		}
-	})
-	//http.HandleFunc("/", rpx.ProxyFunc)
-	if err = http.ListenAndServe(":3001", nil); err != nil {
-		panic(err)
-	}
+	http.HandleFunc("/", rpx.ProxyFunc)
+	http.ListenAndServe(rpx.ProxyRootConfig.ListenAndServe, nil)
 }
