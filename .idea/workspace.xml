@@ -2,7 +2,170 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4870504b-9e2f-4815-9501-77dfc11df361" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/tangram/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/build/quine.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/circle.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/demos/app/gui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/demos/app/key.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/demos/app/rStats.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/demos/app/url.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/demos/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/demos/data/school-districts-polygon.geojson" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/demos/fonts/montserrat.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/demos/images/LitSphere_test_02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/demos/images/matball01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/demos/images/pois.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/demos/images/sunset.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/demos/images/wheel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/demos/lib/FileSaver.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/demos/lib/dat.gui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/demos/lib/keymaster.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/demos/lib/rStats.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/demos/lib/rStats.extras.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/demos/lib/rStats.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/demos/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/demos/scene.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/demos/styles/crosshatch.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/demos/styles/dots.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/demos/styles/halftone.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/demos/styles/popup.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/demos/styles/rainbow.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/demos/styles/water.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/demos/styles/wood.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/dist/tangram.debug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/dist/tangram.debug.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/dist/tangram.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/builders/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/builders/points.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/builders/polygons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/builders/polylines.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/camera.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/geo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/constants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/context.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/extensions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/glsl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/render_state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/shader_program.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/shaders/accessors.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/shaders/ambientLight.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/shaders/directionalLight.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/shaders/layer_order.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/shaders/material.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/shaders/pointLight.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/shaders/rasters.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/shaders/selection_fragment.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/shaders/selection_globals.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/shaders/selection_vertex.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/shaders/spherical_environment_map.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/shaders/spotLight.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/texture.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/vao.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/vbo_mesh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/vertex_data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/vertex_elements.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/vertex_layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/labels/collision.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/labels/intersect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/labels/label.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/labels/label_line.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/labels/label_point.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/labels/main_pass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/labels/point_anchor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/labels/point_placement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/labels/repeat_group.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/leaflet_layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/light.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/material.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/scene.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/scene_bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/scene_loader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/scene_worker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/selection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/sources/data_source.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/sources/geojson.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/sources/mvt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/sources/raster.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/sources/topojson.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/filter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/lines/dasharray.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/lines/lines.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/points/points.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/points/points_fragment.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/points/points_vertex.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/polygons/polygons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/polygons/polygons_fragment.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/polygons/polygons_vertex.glsl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/raster/raster.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/style.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/style_manager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/style_parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/text/canvas_text.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/text/font_manager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/text/text.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/text/text_labels.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/text/text_settings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/tile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/tile_manager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/tile_pyramid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/debounce.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/debug_settings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/errors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/gl-matrix.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/hash.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/log.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/media_capture.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/merge.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/obb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/polyfills.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/slice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/subscribe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/task.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/thread.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/urls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/version.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/worker_broker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/vector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/src/view.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/test/data_source_spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/test/fixtures/sample-json-response.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/test/fixtures/sample-layers.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/test/fixtures/sample-scene.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/test/fixtures/sample-scene.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/test/fixtures/sample-tile.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/test/fixtures/sample-topojson-response.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/test/fixtures/simple-polygon.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/test/geo_spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/test/helpers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/test/layer_spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/test/leaflet_layer_spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/test/merge_spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/test/obb_spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/test/scene_spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/test/style_spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/test/subscribe_spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/test/tile_manager_spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/test/tile_pyramid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/test/tile_spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/test/utils_spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/test/vertex_data_spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/test/vertex_layout_spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gOsmServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gOsmServer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/SimpleReverseProxy.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/SimpleReverseProxy.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/cron.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/cron.a" afterDir="false" />
@@ -23,9 +186,6 @@
       <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/seelog/archive/tar.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/seelog/archive/tar.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/seelog/archive/zip.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/seelog/archive/zip.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/telerik.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/telerik.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/site_original_template/docs/index.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/static/site_original_template/docs/index.tmpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/site_original_template/docs/index/rightMenu.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/static/site_original_template/docs/index/rightMenu.tmpl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -159,32 +319,50 @@
     <session id="527408857">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="geojson" value="3" />
+          <entry key="html" value="3" />
+          <entry key="js" value="6" />
           <entry key="tmpl" value="4" />
+          <entry key="yaml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="4" />
+          <entry key="HTML" value="7" />
+          <entry key="JavaScript" value="6" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="YAML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="23" />
+          <entry key="geojson" value="4" />
+          <entry key="go" value="86" />
+          <entry key="html" value="87" />
+          <entry key="js" value="67" />
           <entry key="tmpl" value="79" />
+          <entry key="yaml" value="70" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="23" />
-          <entry key="HTML" value="79" />
+          <entry key="Go" value="86" />
+          <entry key="HTML" value="166" />
+          <entry key="JavaScript" value="67" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="YAML" value="70" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.go.postfix.template.usages.trigger" />
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.js.language.service.starts" />
     </session>
   </component>
   <component name="FileEditorManager">
@@ -193,7 +371,7 @@
         <entry file="file://$PROJECT_DIR$/static/site_original_template/docs/index/mainMenu.tmpl">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="23" />
+              <caret line="1" column="23" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -201,19 +379,74 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/site_original_template/docs/index.tmpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
+            <state relative-caret-position="1581">
               <caret line="93" column="39" selection-start-line="93" selection-start-column="39" selection-end-line="93" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="329" column="8" selection-start-line="329" selection-start-column="8" selection-end-line="329" selection-end-column="8" />
+            <state relative-caret-position="253">
+              <caret line="341" column="22" selection-start-line="341" selection-start-column="22" selection-end-line="341" selection-end-column="22" />
               <folding>
                 <element signature="e#14#437#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/tangram/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-278" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/tangram/demos/app/gui.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4854" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/tangram/demos/app/key.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-9" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/tangram/demos/app/rStats.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/tangram/demos/app/url.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-128" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/tangram/demos/scene.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="93" column="4" selection-start-line="93" selection-start-column="4" selection-end-line="93" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/test/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="89" column="85" selection-start-line="89" selection-start-column="85" selection-end-line="89" selection-end-column="85" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#0#6#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -223,7 +456,7 @@
         <entry file="file://$PROJECT_DIR$/static/site_original_template/docs/index/rightMenu.tmpl">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="17" />
+              <caret line="2" column="150" selection-start-line="2" selection-start-column="146" selection-end-line="2" selection-end-column="150" />
             </state>
           </provider>
         </entry>
@@ -239,10 +472,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>be</find>
-      <find>bell</find>
-      <find>&lt;div class=&quot;d-flex order-lg-2 ml-auto&quot;</find>
-      <find>loca</find>
       <find>static</find>
       <find>25.j</find>
       <find>ListenAndServe</find>
@@ -269,6 +498,10 @@
       <find>docu</find>
       <find>edit</find>
       <find>$PROJECT_DIR$/../../../../hkemper/Dropbox/site_pessoal</find>
+      <find>SphereGeometry</find>
+      <find>school-districts-polygon.geojson</find>
+      <find>../../src</find>
+      <find>geojson</find>
     </findStrings>
     <replaceStrings>
       <replace>jsQueryListData</replace>
@@ -277,9 +510,11 @@
       <replace>/plugins</replace>
       <replace>./static/site_original_template/</replace>
       <replace>.</replace>
+      <replace>http://leaflet.github.io/Leaflet.draw/src</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/static/site_original_template</dir>
+      <dir>$PROJECT_DIR$/static/tangram</dir>
     </dirStrings>
   </component>
   <component name="GOROOT" path="$USER_HOME$/Downloads/go binaries/go1.11" />
@@ -314,6 +549,11 @@
         <option value="$PROJECT_DIR$/static/site_original_template/docs/index/rightMenu.tmpl" />
         <option value="$PROJECT_DIR$/static/site_original_template/docs/index.tmpl" />
         <option value="$PROJECT_DIR$/main.go" />
+        <option value="$PROJECT_DIR$/static/vizicities/examples/geojson/test.geojson" />
+        <option value="$PROJECT_DIR$/static/vizicities/examples/geojson/main.js" />
+        <option value="$PROJECT_DIR$/static/tangram/demos/scene.yaml" />
+        <option value="$PROJECT_DIR$/static/test/scene.yaml" />
+        <option value="$PROJECT_DIR$/static/test/index.html" />
       </list>
     </option>
   </component>
@@ -322,6 +562,11 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/static/tangram/package.json" />
+    </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="49" />
@@ -335,7 +580,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -352,33 +596,40 @@
               <item name="site_pessoal" type="b2602c69:ProjectViewProjectNode" />
               <item name="site_pessoal" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="site_original_template" type="462c0819:PsiDirectoryNode" />
+              <item name="tangram" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="site_pessoal" type="b2602c69:ProjectViewProjectNode" />
               <item name="site_pessoal" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="site_original_template" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="tangram" type="462c0819:PsiDirectoryNode" />
+              <item name="demos" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="site_pessoal" type="b2602c69:ProjectViewProjectNode" />
               <item name="site_pessoal" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="site_original_template" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
+              <item name="tangram" type="462c0819:PsiDirectoryNode" />
+              <item name="demos" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="site_pessoal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="site_pessoal" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go Application" />
     <property name="GO_FMT" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="jquery&#9;FILE&#9;file:///home/hkemper/Dropbox/site_pessoal/static/site_original/assets/js/vendors/jquery-3.2.1.min.js" />
+    <property name="SearchEverywhereHistoryKey" value=".geojson&#9;FILE&#9;file:///home/kemper/Documents/kemper/site_pessoal/static/tangram/demos/data/school-districts-polygon.geojson&#10;jquery&#9;FILE&#9;file:///home/hkemper/Dropbox/site_pessoal/static/site_original/assets/js/vendors/jquery-3.2.1.min.js" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="true" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
@@ -387,7 +638,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="go.sdk" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -439,7 +690,7 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49972633" visible="true" weight="0.14179894" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49972633" weight="0.14179894" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39876354" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -447,7 +698,7 @@
       <window_info anchor="bottom" id="Code comment" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32921174" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32910052" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32910052" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50027364" side_tool="true" weight="0.32910052" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -474,70 +725,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/main.go</url>
-          <line>417</line>
+          <line>431</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Libraries/src/github.com/helmutkemper/safeType/safeMapStringInterface.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Libraries/src/github.com/helmutkemper/SimpleReverseProxy/proxy.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2142" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Libraries/src/github.com/helmutkemper/SimpleReverseProxy/proxyDomain.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-722" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Libraries/src/github.com/helmutkemper/SimpleReverseProxy/proxyFuncMap.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Libraries/src/github.com/helmutkemper/SimpleReverseProxy/proxyHandle.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-688" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Libraries/src/github.com/helmutkemper/SimpleReverseProxy/proxyHandleFunc.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Libraries/src/github.com/helmutkemper/SimpleReverseProxy/proxyPath.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-127" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Libraries/src/github.com/helmutkemper/SimpleReverseProxy/proxyRadix.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Libraries/src/github.com/helmutkemper/SimpleReverseProxy/ProxyRequest.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Libraries/src/github.com/helmutkemper/SimpleReverseProxy/ProxyResponseWriter.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Libraries/src/github.com/helmutkemper/SimpleReverseProxy/proxyRoute.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-518" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Libraries/src/github.com/helmutkemper/SimpleReverseProxy/proxyTime.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-399" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Libraries/src/github.com/helmutkemper/SimpleReverseProxy/proxyUrl.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1113" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Libraries/src/github.com/helmutkemper/SimpleReverseProxy/timeMensure.go">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -681,30 +875,114 @@
     <entry file="file://$PROJECT_DIR$/static/site_original_template/docs/index/mainMenu.tmpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="23" />
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/site_original_template/docs/index.tmpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1581">
+          <caret line="93" column="39" selection-start-line="93" selection-start-column="39" selection-end-line="93" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/site_original_template/docs/index/rightMenu.tmpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/site_original_template/docs/index.tmpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="93" column="39" selection-start-line="93" selection-start-column="39" selection-end-line="93" selection-end-column="39" />
+          <caret line="2" column="150" selection-start-line="2" selection-start-column="146" selection-end-line="2" selection-end-column="150" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="329" column="8" selection-start-line="329" selection-start-column="8" selection-end-line="329" selection-end-column="8" />
+        <state relative-caret-position="253">
+          <caret line="341" column="22" selection-start-line="341" selection-start-column="22" selection-end-line="341" selection-end-column="22" />
           <folding>
             <element signature="e#14#437#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/vizicities/examples/geojson/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/vizicities/examples/geojson/test.geojson">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="708">
+          <caret line="5564" column="184" lean-forward="true" selection-start-line="5564" selection-start-column="154" selection-end-line="5564" selection-end-column="184" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="561">
+          <caret line="1656" column="2" lean-forward="true" selection-start-line="876" selection-start-column="2" selection-end-line="1656" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/vizicities/examples/mta-routes/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/vizicities/examples/geojson/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="43" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#6#0" expanded="true" />
+            <element signature="e#88#94#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/tangram/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-278" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/tangram/demos/app/gui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4854" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/tangram/demos/app/key.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/tangram/demos/app/rStats.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/tangram/demos/app/url.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-128" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/tangram/demos/scene.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="93" column="4" selection-start-line="93" selection-start-column="4" selection-end-line="93" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/test/scene.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/tangram/demos/data/school-districts-polygon.geojson">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/test/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="89" column="85" selection-start-line="89" selection-start-column="85" selection-end-line="89" selection-end-column="85" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#0#6#0" expanded="true" />
           </folding>
         </state>
       </provider>
