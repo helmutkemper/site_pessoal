@@ -1,93 +1,83 @@
 
 <!DOCTYPE html>
+<!--
+    This page demonstrates the usage of a popup-style toolbar. Along with the
+    standard 'save' and 'edit' actions, this page demonstrates a colorpicker
+    action which allows the user to click on a drawn feature and change its
+    color.
+-->
 <html>
 <head>
-  <title>Leaflet.draw vector editing handlers</title>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-  <script src="http://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet-src.js"></script>
-  <link rel="stylesheet" href="http://leaflet.github.io/Leaflet.draw/docs/examples/libs/leaflet.css"/>
-
-  <script src="http://leaflet.github.io/Leaflet.draw/src/Leaflet.draw.js"></script>
-  <script src="http://leaflet.github.io/Leaflet.draw/src/Leaflet.Draw.Event.js"></script>
-  <link rel="stylesheet" href="http://leaflet.github.io/Leaflet.draw/src/leaflet.draw.css"/>
-
-  <script src="http://leaflet.github.io/Leaflet.draw/src/Toolbar.js"></script>
-  <script src="http://leaflet.github.io/Leaflet.draw/src/Tooltip.js"></script>
-
-  <script src="http://leaflet.github.io/Leaflet.draw/src/ext/GeometryUtil.js"></script>
-  <script src="http://leaflet.github.io/Leaflet.draw/src/ext/LatLngUtil.js"></script>
-  <script src="http://leaflet.github.io/Leaflet.draw/src/ext/LineUtil.Intersect.js"></script>
-  <script src="http://leaflet.github.io/Leaflet.draw/src/ext/Polygon.Intersect.js"></script>
-  <script src="http://leaflet.github.io/Leaflet.draw/src/ext/Polyline.Intersect.js"></script>
-  <script src="http://leaflet.github.io/Leaflet.draw/src/ext/TouchEvents.js"></script>
-
-  <script src="http://leaflet.github.io/Leaflet.draw/src/draw/DrawToolbar.js"></script>
-  <script src="http://leaflet.github.io/Leaflet.draw/src/draw/handler/Draw.Feature.js"></script>
-  <script src="http://leaflet.github.io/Leaflet.draw/src/draw/handler/Draw.SimpleShape.js"></script>
-  <script src="http://leaflet.github.io/Leaflet.draw/src/draw/handler/Draw.Polyline.js"></script>
-  <script src="http://leaflet.github.io/Leaflet.draw/src/draw/handler/Draw.Marker.js"></script>
-  <script src="http://leaflet.github.io/Leaflet.draw/src/draw/handler/Draw.Circle.js"></script>
-  <script src="http://leaflet.github.io/Leaflet.draw/src/draw/handler/Draw.CircleMarker.js"></script>
-  <script src="http://leaflet.github.io/Leaflet.draw/src/draw/handler/Draw.Polygon.js"></script>
-  <script src="http://leaflet.github.io/Leaflet.draw/src/draw/handler/Draw.Rectangle.js"></script>
-
-
-  <script src="http://leaflet.github.io/Leaflet.draw/src/edit/EditToolbar.js"></script>
-  <script src="http://leaflet.github.io/Leaflet.draw/src/edit/handler/EditToolbar.Edit.js"></script>
-  <script src="http://leaflet.github.io/Leaflet.draw/src/edit/handler/EditToolbar.Delete.js"></script>
-
-  <script src="http://leaflet.github.io/Leaflet.draw/src/Control.Draw.js"></script>
-
-  <script src="http://leaflet.github.io/Leaflet.draw/src/edit/handler/Edit.Poly.js"></script>
-  <script src="http://leaflet.github.io/Leaflet.draw/src/edit/handler/Edit.SimpleShape.js"></script>
-  <script src="http://leaflet.github.io/Leaflet.draw/src/edit/handler/Edit.Rectangle.js"></script>
-  <script src="http://leaflet.github.io/Leaflet.draw/src/edit/handler/Edit.Marker.js"></script>
-  <script src="http://leaflet.github.io/Leaflet.draw/src/edit/handler/Edit.CircleMarker.js"></script>
-  <script src="http://leaflet.github.io/Leaflet.draw/src/edit/handler/Edit.Circle.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://justinmanley.github.io/leaflet-draw-toolbar/deps/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" type="text/css" href="https://justinmanley.github.io/leaflet-draw-toolbar/deps/leaflet-draw/dist/leaflet.draw.css" />
+  <link rel="stylesheet" type="text/css" href="https://justinmanley.github.io/leaflet-draw-toolbar/deps/leaflet-toolbar/dist/leaflet.toolbar.css" />
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css"/>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="https://justinmanley.github.io/leaflet-draw-toolbar/dist/leaflet.draw-toolbar.css"/>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script src="https://justinmanley.github.io/leaflet-draw-toolbar/deps/leaflet/dist/leaflet-src.js"></script>
+  <script src="https://justinmanley.github.io/leaflet-draw-toolbar/deps/leaflet-toolbar/dist/leaflet.toolbar-src.js"></script>
+  <script src="https://justinmanley.github.io/leaflet-draw-toolbar/deps/leaflet-draw/dist/leaflet.draw-src.js"></script>
+  <script src="https://justinmanley.github.io/leaflet-draw-toolbar/dist/leaflet.draw-toolbar.js"></script>
+  <script src="https://justinmanley.github.io/leaflet-draw-toolbar/examples/ColorPicker.js"></script>
+  <style>
+    html, body, #map { margin: 0; height: 100%; width: 100%; }
+  </style>
 </head>
 <body>
-<div id="map" style="width: 800px; height: 600px; border: 1px solid #ccc"></div>
-
+<div id="map"></div>
+<style>
+  .leaflet-toolbar-icon .fa { color: #000; }
+  .leaflet-color-swatch { background-color: #fff; }
+</style>
 <script>
-  var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-    osmAttrib = '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    osm = L.tileLayer(osmUrl, { maxZoom: 18, attribution: osmAttrib }),
-    map = new L.Map('map', { center: new L.LatLng(40.625179065707037,-73.961393196314646), zoom: 10 }),
-    drawnItems = L.featureGroup().addTo(map);
-  L.control.layers({
-    'osm': osm.addTo(map),
-    "google": L.tileLayer('http://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}', {
-      attribution: 'google'
-    })
-  }, { 'drawlayer': drawnItems }, { position: 'topleft', collapsed: false }).addTo(map);
-  map.addControl(new L.Control.Draw({
-    edit: {
-      featureGroup: drawnItems,
-      poly: {
-        allowIntersection: false
-      }
-    },
-    draw: {
-      polygon: {
-        allowIntersection: false,
-        showArea: true
-      }
-    }
-  }));
+  var map = L.map('map').setView([41.7896,-87.5996], 15),
+    drawnItems = new L.FeatureGroup().addTo(map),
+    editActions = [
+      LeafletToolbar.EditAction.Popup.Edit,
+      LeafletToolbar.EditAction.Popup.Delete,
+      LeafletToolbar.ToolbarAction.extendOptions({
+        toolbarIcon: {
+          className: 'leaflet-color-picker',
+          html: '<span class="fa fa-eyedropper"></span>'
+        },
+        subToolbar: new LeafletToolbar({ actions: [
+            L.ColorPicker.extendOptions({ color: '#db1d0f' }),
+            L.ColorPicker.extendOptions({ color: '#025100' }),
+            L.ColorPicker.extendOptions({ color: '#ffff00' }),
+            L.ColorPicker.extendOptions({ color: '#0000ff' })
+          ]})
+      })
+    ];
 
-  map.on(L.Draw.Event.CREATED, function (event) {
-    var layer = event.layer;
+  L.tileLayer("http://tile.stamen.com/terrain/{z}/{x}/{y}.jpg", {
+    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.'
+  }).addTo(map);
+
+  new LeafletToolbar.DrawToolbar({
+    position: 'topleft',
+  }).addTo(map);
+
+  map.on('draw:created', function(evt) {
+    var	type = evt.layerType,
+      layer = evt.layer;
 
     drawnItems.addLayer(layer);
+
+    layer.on('click', function(event) {
+      new LeafletToolbar.EditToolbar.Popup(event.latlng, {
+        actions: editActions
+      }).addTo(map, layer);
+    });
   });
 
   var district_boundary = new L.geoJson();
   district_boundary.addTo(map);
 
   let xhr = new XMLHttpRequest();
-  xhr.open('GET', "../../static/tangram/demos/data/school-districts-polygon.geojson");
+  xhr.open('GET', "../../static/tangram/demos/data/sc.geojson");
   xhr.setRequestHeader('Content-Type', 'application/json');
   xhr.onload = function() {
     if (xhr.status === 200) {

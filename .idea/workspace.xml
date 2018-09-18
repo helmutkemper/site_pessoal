@@ -2,190 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4870504b-9e2f-4815-9501-77dfc11df361" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/tangram/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/CONTRIBUTING.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/ISSUE_TEMPLATE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/bower.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/build/quine.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/circle.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/demos/app/gui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/demos/app/key.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/demos/app/rStats.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/demos/app/url.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/demos/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/demos/data/school-districts-polygon.geojson" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/demos/fonts/montserrat.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/demos/images/LitSphere_test_02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/demos/images/matball01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/demos/images/pois.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/demos/images/sunset.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/demos/images/wheel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/demos/lib/FileSaver.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/demos/lib/dat.gui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/demos/lib/keymaster.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/demos/lib/rStats.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/demos/lib/rStats.extras.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/demos/lib/rStats.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/demos/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/demos/scene.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/demos/styles/crosshatch.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/demos/styles/dots.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/demos/styles/halftone.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/demos/styles/popup.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/demos/styles/rainbow.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/demos/styles/water.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/demos/styles/wood.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/dist/tangram.debug.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/dist/tangram.debug.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/dist/tangram.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/builders/common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/builders/points.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/builders/polygons.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/builders/polylines.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/camera.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/geo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/context.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/extensions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/glsl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/render_state.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/shader_program.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/shaders/accessors.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/shaders/ambientLight.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/shaders/directionalLight.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/shaders/layer_order.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/shaders/material.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/shaders/pointLight.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/shaders/rasters.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/shaders/selection_fragment.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/shaders/selection_globals.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/shaders/selection_vertex.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/shaders/spherical_environment_map.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/shaders/spotLight.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/texture.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/vao.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/vbo_mesh.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/vertex_data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/vertex_elements.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/gl/vertex_layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/labels/collision.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/labels/intersect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/labels/label.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/labels/label_line.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/labels/label_point.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/labels/main_pass.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/labels/point_anchor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/labels/point_placement.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/labels/repeat_group.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/leaflet_layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/light.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/material.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/module.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/scene.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/scene_bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/scene_loader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/scene_worker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/selection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/sources/data_source.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/sources/geojson.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/sources/mvt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/sources/raster.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/sources/topojson.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/filter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/lines/dasharray.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/lines/lines.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/points/points.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/points/points_fragment.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/points/points_vertex.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/polygons/polygons.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/polygons/polygons_fragment.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/polygons/polygons_vertex.glsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/raster/raster.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/style.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/style_manager.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/style_parser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/text/canvas_text.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/text/font_manager.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/text/text.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/text/text_labels.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/styles/text/text_settings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/tile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/tile_manager.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/tile_pyramid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/debounce.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/debug_settings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/errors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/gl-matrix.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/hash.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/log.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/media_capture.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/merge.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/obb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/polyfills.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/slice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/subscribe.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/task.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/thread.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/urls.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/version.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/utils/worker_broker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/vector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/src/view.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/test/data_source_spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/test/fixtures/sample-json-response.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/test/fixtures/sample-layers.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/test/fixtures/sample-scene.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/test/fixtures/sample-scene.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/test/fixtures/sample-tile.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/test/fixtures/sample-topojson-response.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/test/fixtures/simple-polygon.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/test/geo_spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/test/helpers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/test/layer_spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/test/leaflet_layer_spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/test/merge_spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/test/obb_spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/test/scene_spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/test/style_spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/test/subscribe_spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/test/tile_manager_spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/test/tile_pyramid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/test/tile_spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/test/utils_spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/test/vertex_data_spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tangram/test/vertex_layout_spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gOsmServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gOsmServer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tangram/demos/data/sc.geojson" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/SimpleReverseProxy.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/SimpleReverseProxy.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/cron.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/cron.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/go-candyjs.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/go-candyjs.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/go-duktape.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/go-duktape.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/go-radix.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/go-radix.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/javascript.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/javascript.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/mgo.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/mgo.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/mgo/bson.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/mgo/bson.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/mgo/internal/json.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/mgo/internal/json.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/mgo/internal/scram.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/mgo/internal/scram.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/mongodb.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/mongodb.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/ntp.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/ntp.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/safeType.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/safeType.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/seelog.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/seelog.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/seelog/archive.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/seelog/archive.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/seelog/archive/gzip.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/seelog/archive/gzip.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/seelog/archive/tar.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/seelog/archive/tar.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/seelog/archive/zip.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/seelog/archive/zip.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/telerik.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/telerik.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/test/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -326,7 +145,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="geojson" value="3" />
+          <entry key="geojson" value="6" />
           <entry key="html" value="3" />
           <entry key="js" value="6" />
           <entry key="tmpl" value="4" />
@@ -337,7 +156,7 @@
         <counts>
           <entry key="HTML" value="7" />
           <entry key="JavaScript" value="6" />
-          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="PLAIN_TEXT" value="6" />
           <entry key="YAML" value="3" />
         </counts>
       </usages-collector>
@@ -345,7 +164,7 @@
         <counts>
           <entry key="geojson" value="4" />
           <entry key="go" value="86" />
-          <entry key="html" value="87" />
+          <entry key="html" value="102" />
           <entry key="js" value="67" />
           <entry key="tmpl" value="79" />
           <entry key="yaml" value="70" />
@@ -354,7 +173,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Go" value="86" />
-          <entry key="HTML" value="166" />
+          <entry key="HTML" value="181" />
           <entry key="JavaScript" value="67" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="YAML" value="70" />
@@ -442,12 +261,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/test/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="89" column="85" selection-start-line="89" selection-start-column="85" selection-end-line="89" selection-end-column="85" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#0#6#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="413">
+              <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/tangram/demos/data/school-districts-polygon.geojson">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="127" selection-end-line="252" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/tangram/demos/data/sc.geojson">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="276" column="50" selection-start-line="276" selection-start-column="50" selection-end-line="276" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -472,10 +305,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>static</find>
-      <find>25.j</find>
-      <find>ListenAndServe</find>
-      <find>25</find>
       <find>/st/</find>
       <find>DropdownProfile</find>
       <find>inter</find>
@@ -502,6 +331,10 @@
       <find>school-districts-polygon.geojson</find>
       <find>../../src</find>
       <find>geojson</find>
+      <find>cir</find>
+      <find>CircleMarker</find>
+      <find>drawl</find>
+      <find>LeafletToolbar</find>
     </findStrings>
     <replaceStrings>
       <replace>jsQueryListData</replace>
@@ -553,6 +386,7 @@
         <option value="$PROJECT_DIR$/static/vizicities/examples/geojson/main.js" />
         <option value="$PROJECT_DIR$/static/tangram/demos/scene.yaml" />
         <option value="$PROJECT_DIR$/static/test/scene.yaml" />
+        <option value="$PROJECT_DIR$/static/tangram/demos/data/sc.geojson" />
         <option value="$PROJECT_DIR$/static/test/index.html" />
       </list>
     </option>
@@ -732,9 +566,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Libraries/src/github.com/helmutkemper/SimpleReverseProxy/timeMensure.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/go binaries/go1.11/src/runtime/panic.go" />
     <entry file="file://$USER_HOME$/Downloads/go binaries/go1.11/src/net/http/server.go" />
     <entry file="file://$PROJECT_DIR$/Libraries/src/github.com/helmutkemper/SimpleReverseProxy/proxyFunction.go">
@@ -974,16 +805,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/tangram/demos/data/school-districts-polygon.geojson">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="127" selection-end-line="252" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/tangram/demos/data/sc.geojson">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="276" column="50" selection-start-line="276" selection-start-column="50" selection-end-line="276" selection-end-column="50" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/test/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="89" column="85" selection-start-line="89" selection-start-column="85" selection-end-line="89" selection-end-column="85" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#0#6#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="413">
+          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
         </state>
       </provider>
     </entry>
