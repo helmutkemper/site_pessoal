@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4870504b-9e2f-4815-9501-77dfc11df361" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/tangram/demos/data/sc.geojson" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/test/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -164,7 +162,7 @@
         <counts>
           <entry key="geojson" value="4" />
           <entry key="go" value="86" />
-          <entry key="html" value="102" />
+          <entry key="html" value="117" />
           <entry key="js" value="67" />
           <entry key="tmpl" value="79" />
           <entry key="yaml" value="70" />
@@ -173,7 +171,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Go" value="86" />
-          <entry key="HTML" value="181" />
+          <entry key="HTML" value="196" />
           <entry key="JavaScript" value="67" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="YAML" value="70" />
@@ -261,8 +259,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/test/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+            <state relative-caret-position="341">
+              <caret line="75" column="33" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -820,8 +818,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/test/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+        <state relative-caret-position="341">
+          <caret line="75" column="33" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
         </state>
       </provider>
     </entry>
