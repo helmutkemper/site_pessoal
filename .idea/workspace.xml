@@ -2,23 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4870504b-9e2f-4815-9501-77dfc11df361" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/site_original_template/assets/fonts/wolf/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/site_original_template/assets/fonts/wolf/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/site_original_template/docs/index/admin.tmpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/site_original_template/docs/index/bell.tmpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/site_original_template/docs/index/mainMenu(copy).tmpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/site_original_template/docs/index/mainMenu.tmpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/site_original_template/docs/index/rightMenu.tmpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/site_original_template/docs/index/searchForm.tmpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/site_original_template/docs/index/userMenu.tmpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/site_original_template/jquery-3.2.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gOsmServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gOsmServer.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/SimpleReverseProxy.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/SimpleReverseProxy.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/cron.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/cron.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/go-candyjs.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/go-candyjs.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/go-duktape.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/go-duktape.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/go-radix.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/go-radix.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/javascript.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/javascript.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/mgo.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/mgo.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/mgo/bson.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/mgo/bson.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/mgo/internal/json.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/mgo/internal/json.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/mgo/internal/scram.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/mgo/internal/scram.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/mongodb.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/mongodb.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/ntp.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/ntp.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/safeType.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/safeType.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/seelog.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/seelog.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/seelog/archive.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/seelog/archive.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/seelog/archive/gzip.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/seelog/archive/gzip.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/seelog/archive/tar.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/seelog/archive/tar.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/seelog/archive/zip.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/seelog/archive/zip.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/telerik.a" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/pkg/linux_amd64/github.com/helmutkemper/telerik.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/site_original_template/assets/js/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/site_original_template/assets/js/dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/site_original_template/docs/bell.tmpl" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/site_original_template/docs/index.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/static/site_original_template/docs/index.tmpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/site_original_template/docs/mainMenu.tmpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/site_original_template/docs/index/rightMenu.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/static/site_original_template/docs/index/rightMenu.tmpl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -149,57 +156,79 @@
       <usages-collector id="statistics.go.postfix.template.usages.trigger" />
       <usages-collector id="statistics.vcs.git.usages" />
     </session>
+    <session id="527408857">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="tmpl" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="go" value="23" />
+          <entry key="tmpl" value="79" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Go" value="23" />
+          <entry key="HTML" value="79" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.32447225">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/main.go">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="205">
-                  <caret line="364" column="35" selection-start-line="364" selection-start-column="35" selection-end-line="364" selection-end-column="35" />
-                  <folding>
-                    <element signature="e#14#437#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/static/site_original_template/docs/index/mainMenu.tmpl">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
-                  <caret line="6" column="67" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/static/site_original_template/docs/index/mainMenu.tmpl">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/static/site_original_template/docs/index.tmpl">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="107">
-                  <caret line="74" column="36" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/site_original_template/docs/index/mainMenu.tmpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/site_original_template/docs/index.tmpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="93" column="39" selection-start-line="93" selection-start-column="39" selection-end-line="93" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="329" column="8" selection-start-line="329" selection-start-column="8" selection-end-line="329" selection-end-column="8" />
+              <folding>
+                <element signature="e#14#437#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/site_original_template/docs/index/rightMenu.tmpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -210,7 +239,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>{{ template</find>
       <find>be</find>
       <find>bell</find>
       <find>&lt;div class=&quot;d-flex order-lg-2 ml-auto&quot;</find>
@@ -240,6 +268,7 @@
       <find>compo</find>
       <find>docu</find>
       <find>edit</find>
+      <find>$PROJECT_DIR$/../../../../hkemper/Dropbox/site_pessoal</find>
     </findStrings>
     <replaceStrings>
       <replace>jsQueryListData</replace>
@@ -247,12 +276,13 @@
       <replace>../static</replace>
       <replace>/plugins</replace>
       <replace>./static/site_original_template/</replace>
+      <replace>.</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/static/site_original_template</dir>
     </dirStrings>
   </component>
-  <component name="GOROOT" path="$USER_HOME$/Downloads/golang_binaries/go1.10.3" />
+  <component name="GOROOT" path="$USER_HOME$/Downloads/go binaries/go1.11" />
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -280,9 +310,9 @@
         <option value="$PROJECT_DIR$/static/site_original_template/docs/index/userMenu.tmpl" />
         <option value="$PROJECT_DIR$/static/site_original_template/docs/index/bell.tmpl" />
         <option value="$PROJECT_DIR$/static/site_original_template/docs/index/admin.tmpl" />
+        <option value="$PROJECT_DIR$/static/site_original_template/docs/index/mainMenu.tmpl" />
         <option value="$PROJECT_DIR$/static/site_original_template/docs/index/rightMenu.tmpl" />
         <option value="$PROJECT_DIR$/static/site_original_template/docs/index.tmpl" />
-        <option value="$PROJECT_DIR$/static/site_original_template/docs/index/mainMenu.tmpl" />
         <option value="$PROJECT_DIR$/main.go" />
       </list>
     </option>
@@ -305,6 +335,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -342,7 +373,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -400,16 +430,16 @@
     </configuration>
   </component>
   <component name="ToolWindowManager">
-    <frame x="48" y="-17" width="1319" height="786" extended-state="6" />
+    <frame x="48" y="-17" width="1873" height="1098" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.26426896" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26382047" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Compare Directories" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49972633" visible="true" weight="0.14219475" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49972633" visible="true" weight="0.14179894" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39876354" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -444,21 +474,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/main.go</url>
-          <line>411</line>
-          <properties />
+          <line>417</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Libraries/src/github.com/helmutkemper/javascript/getRouteCron.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Libraries/src/github.com/helmutkemper/safeType/safeMapStringInterface.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -575,30 +597,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/site_original_template/docs/dropdownProfile.tmpl.go" />
-    <entry file="file://$PROJECT_DIR$/static/site_original_template/docs/dropDownProfile.tmpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="36" selection-start-column="36" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/site_original_template/docs/mainMenu.tmpl">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/site_original_template/docs/dropDownBell.tmpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="36" selection-start-column="36" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/site_original_template/docs/rightMenu.tmpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/static/site_original_template/docs/dropDownProfile.tmpl" />
+    <entry file="file://$PROJECT_DIR$/static/site_original_template/docs/mainMenu.tmpl" />
+    <entry file="file://$PROJECT_DIR$/static/site_original_template/docs/dropDownBell.tmpl" />
+    <entry file="file://$PROJECT_DIR$/static/site_original_template/docs/rightMenu.tmpl" />
     <entry file="file://$PROJECT_DIR$/static/site_original_template/docs/alerts.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -606,131 +608,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/site_original_template/docs/lixo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="422" column="12" lean-forward="true" selection-start-line="422" selection-start-column="12" selection-end-line="422" selection-end-column="12" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#a#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#a#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#a#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#15471#15475#0#HTML" expanded="true" />
-            <element signature="e#15637#15641#1#HTML" expanded="true" />
-            <element signature="e#15706#15710#0#HTML" expanded="true" />
-            <element signature="e#15714#15718#0#HTML" expanded="true" />
-            <element signature="e#15743#15747#0#HTML" expanded="true" />
-            <element signature="e#15911#15915#1#HTML" expanded="true" />
-            <element signature="e#15982#15986#0#HTML" expanded="true" />
-            <element signature="e#15990#15994#0#HTML" expanded="true" />
-            <element signature="e#16019#16023#0#HTML" expanded="true" />
-            <element signature="e#16185#16189#1#HTML" expanded="true" />
-            <element signature="e#16254#16258#0#HTML" expanded="true" />
-            <element signature="e#16262#16266#0#HTML" expanded="true" />
-            <element signature="e#16291#16295#0#HTML" expanded="true" />
-            <element signature="e#16454#16458#1#HTML" expanded="true" />
-            <element signature="e#16520#16524#0#HTML" expanded="true" />
-            <element signature="e#16528#16532#0#HTML" expanded="true" />
-            <element signature="e#16557#16561#0#HTML" expanded="true" />
-            <element signature="e#16723#16727#1#HTML" expanded="true" />
-            <element signature="e#16792#16796#0#HTML" expanded="true" />
-            <element signature="e#16800#16804#0#HTML" expanded="true" />
-            <element signature="e#16829#16833#0#HTML" expanded="true" />
-            <element signature="e#16994#16998#1#HTML" expanded="true" />
-            <element signature="e#17062#17066#0#HTML" expanded="true" />
-            <element signature="e#17070#17074#0#HTML" expanded="true" />
-            <element signature="e#18266#18270#0#HTML" expanded="true" />
-            <element signature="e#18443#18447#1#HTML" expanded="true" />
-            <element signature="e#18474#18478#0#HTML" expanded="true" />
-            <element signature="e#18640#18644#0#HTML" expanded="true" />
-            <element signature="e#18644#18648#0#HTML" expanded="true" />
-            <element signature="e#18650#18654#0#HTML" expanded="true" />
-            <element signature="e#18704#18708#0#HTML" expanded="true" />
-            <element signature="e#18712#18716#0#HTML" expanded="true" />
-            <element signature="e#18741#18745#0#HTML" expanded="true" />
-            <element signature="e#18918#18922#1#HTML" expanded="true" />
-            <element signature="e#18949#18953#0#HTML" expanded="true" />
-            <element signature="e#19116#19120#0#HTML" expanded="true" />
-            <element signature="e#19120#19124#0#HTML" expanded="true" />
-            <element signature="e#19126#19130#0#HTML" expanded="true" />
-            <element signature="e#19180#19184#0#HTML" expanded="true" />
-            <element signature="e#19188#19192#0#HTML" expanded="true" />
-            <element signature="e#19217#19221#0#HTML" expanded="true" />
-            <element signature="e#19393#19397#1#HTML" expanded="true" />
-            <element signature="e#19424#19428#0#HTML" expanded="true" />
-            <element signature="e#19600#19604#0#HTML" expanded="true" />
-            <element signature="e#19604#19608#0#HTML" expanded="true" />
-            <element signature="e#19610#19614#0#HTML" expanded="true" />
-            <element signature="e#19842#19846#0#HTML" expanded="true" />
-            <element signature="e#19850#19854#0#HTML" expanded="true" />
-            <element signature="e#20404#20408#0#HTML" expanded="true" />
-            <element signature="e#20414#20418#0#HTML" expanded="true" />
-            <element signature="e#20952#20956#0#HTML" expanded="true" />
-            <element signature="e#21076#21080#1#HTML" expanded="true" />
-            <element signature="e#21107#21111#0#HTML" expanded="true" />
-            <element signature="e#21331#21335#0#HTML" expanded="true" />
-            <element signature="e#21335#21339#0#HTML" expanded="true" />
-            <element signature="e#21346#21350#0#HTML" expanded="true" />
-            <element signature="e#21435#21439#0#HTML" expanded="true" />
-            <element signature="e#21443#21447#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#7;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#7;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#22534#22538#0#HTML" expanded="true" />
-            <element signature="e#22671#22675#1#HTML" expanded="true" />
-            <element signature="e#22702#22706#0#HTML" expanded="true" />
-            <element signature="e#22898#22902#0#HTML" expanded="true" />
-            <element signature="e#22902#22906#0#HTML" expanded="true" />
-            <element signature="e#22911#22915#0#HTML" expanded="true" />
-            <element signature="e#23116#23120#0#HTML" expanded="true" />
-            <element signature="e#23124#23128#0#HTML" expanded="true" />
-            <element signature="e#23153#23157#0#HTML" expanded="true" />
-            <element signature="e#23290#23294#1#HTML" expanded="true" />
-            <element signature="e#23321#23325#0#HTML" expanded="true" />
-            <element signature="e#23518#23522#0#HTML" expanded="true" />
-            <element signature="e#23522#23526#0#HTML" expanded="true" />
-            <element signature="e#23531#23535#0#HTML" expanded="true" />
-            <element signature="e#23620#23624#0#HTML" expanded="true" />
-            <element signature="e#23628#23632#0#HTML" expanded="true" />
-            <element signature="e#24608#24612#0#HTML" expanded="true" />
-            <element signature="e#24732#24736#1#HTML" expanded="true" />
-            <element signature="e#24763#24767#0#HTML" expanded="true" />
-            <element signature="e#24926#24930#0#HTML" expanded="true" />
-            <element signature="e#24930#24934#0#HTML" expanded="true" />
-            <element signature="e#24941#24945#0#HTML" expanded="true" />
-            <element signature="e#24972#24976#0#HTML" expanded="true" />
-            <element signature="e#24978#24982#0#HTML" expanded="true" />
-            <element signature="e#25018#25022#0#HTML" expanded="true" />
-            <element signature="e#25025#25029#0#HTML" expanded="true" />
-            <element signature="e#25056#25060#0#HTML" expanded="true" />
-            <element signature="e#25061#25065#0#HTML" expanded="true" />
-            <element signature="e#25193#25197#0#HTML" expanded="true" />
-            <element signature="e#25199#25203#0#HTML" expanded="true" />
-            <element signature="e#25230#25234#0#HTML" expanded="true" />
-            <element signature="e#25325#25329#1#HTML" expanded="true" />
-            <element signature="e#25358#25362#0#HTML" expanded="true" />
-            <element signature="e#25524#25528#1#HTML" expanded="true" />
-            <element signature="e#25556#25560#0#HTML" expanded="true" />
-            <element signature="e#25567#25571#0#HTML" expanded="true" />
-            <element signature="e#25600#25604#0#HTML" expanded="true" />
-            <element signature="e#25768#25772#1#HTML" expanded="true" />
-            <element signature="e#25806#25810#0#HTML" expanded="true" />
-            <element signature="e#25817#25821#0#HTML" expanded="true" />
-            <element signature="e#25848#25852#0#HTML" expanded="true" />
-            <element signature="e#25856#25860#0#HTML" expanded="true" />
-            <element signature="e#25885#25889#0#HTML" expanded="true" />
-            <element signature="e#25893#25897#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/static/site_original_template/docs/lixo.html" />
     <entry file="file://$PROJECT_DIR$/static/site_original/assets/js/vendors/jquery-3.2.1.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/static/site_original_template/assets/css/dashboard.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -759,13 +639,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/site_original_template/docs/bell.tmpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/static/site_original_template/docs/bell.tmpl" />
     <entry file="file://$PROJECT_DIR$/static/site_original/docs/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
@@ -791,11 +665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="19" selection-start-column="19" selection-end-column="19" />
-          <folding>
-            <element signature="e#396#481#0#HTML" expanded="true" />
-            <element signature="e#847#933#0#HTML" expanded="true" />
-            <element signature="e#1278#1365#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -803,37 +672,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-          <folding>
-            <element signature="e#128#215#0#HTML" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/site_original_template/docs/index/mainMenu(copy).tmpl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/site_original_template/docs/index/mainMenu.tmpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/site_original_template/docs/index/rightMenu.tmpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/site_original_template/docs/index.tmpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="74" column="36" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/site_original_template/docs/index/mainMenu.tmpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="67" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
+        <state relative-caret-position="430">
+          <caret line="93" column="39" selection-start-line="93" selection-start-column="39" selection-end-line="93" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="364" column="35" selection-start-line="364" selection-start-column="35" selection-end-line="364" selection-end-column="35" />
+        <state relative-caret-position="286">
+          <caret line="329" column="8" selection-start-line="329" selection-start-column="8" selection-end-line="329" selection-end-column="8" />
           <folding>
             <element signature="e#14#437#0" expanded="true" />
           </folding>

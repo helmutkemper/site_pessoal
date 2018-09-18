@@ -324,6 +324,26 @@ func tplFunc(w rpx.ProxyResponseWriter, r *rpx.ProxyRequest) {
 		"CopyrightYear": "2018",
 		"CopyrightLink": "",
 		"CopyrightName": "Helmut Kemper",
+		"RightMenu": []map[string]interface{}{
+			{
+				"Link":   "#",
+				"Text":   "Introduction",
+				"Active": true,
+				"Icon":   "fe fe-activity",
+			},
+			{
+				"Link":   "#",
+				"Text":   "Alerts",
+				"Active": false,
+				"Icon":   "fe fe-airplay",
+			},
+			{
+				"Link":   "#",
+				"Text":   "Demos",
+				"Active": false,
+				"Icon":   "fe fe-airplay",
+			},
+		},
 		"MainMenu": []map[string]interface{}{
 			{
 				"Icon":  "fe fe-activity",
@@ -399,13 +419,13 @@ func tplFunc(w rpx.ProxyResponseWriter, r *rpx.ProxyRequest) {
 
 	tmpl := template.Must(
 		template.New("index").Funcs(fns).ParseFiles(
-			"/home/hkemper/Dropbox/site_pessoal/static/site_original_template/docs/index.tmpl",
-			"/home/hkemper/Dropbox/site_pessoal/static/site_original_template/docs/index/mainMenu.tmpl",
-			"/home/hkemper/Dropbox/site_pessoal/static/site_original_template/docs/index/searchForm.tmpl",
-			"/home/hkemper/Dropbox/site_pessoal/static/site_original_template/docs/index/userMenu.tmpl",
-			"/home/hkemper/Dropbox/site_pessoal/static/site_original_template/docs/index/bell.tmpl",
-			"/home/hkemper/Dropbox/site_pessoal/static/site_original_template/docs/index/admin.tmpl",
-			"/home/hkemper/Dropbox/site_pessoal/static/site_original_template/docs/index/rightMenu.tmpl",
+			"./static/site_original_template/docs/index.tmpl",
+			"./static/site_original_template/docs/index/mainMenu.tmpl",
+			"./static/site_original_template/docs/index/searchForm.tmpl",
+			"./static/site_original_template/docs/index/userMenu.tmpl",
+			"./static/site_original_template/docs/index/bell.tmpl",
+			"./static/site_original_template/docs/index/admin.tmpl",
+			"./static/site_original_template/docs/index/rightMenu.tmpl",
 		),
 	)
 

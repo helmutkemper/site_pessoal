@@ -1,10 +1,5 @@
-{{ define "rightMenu" }}<a href="./static/site_original_template/docs/index.html" class="list-group-item list-group-item-action active"><span class="icon mr-3"><i class="fe fe-flag"></i></span>Introduction</a>
-<a href="./static/site_original_template/docs/alerts.html" class="list-group-item list-group-item-action"><span class="icon mr-3"><i class="fe fe-alert-triangle"></i></span>Alerts</a>
-<a href="./static/site_original_template/docs/avatars.html" class="list-group-item list-group-item-action"><span class="icon mr-3"><i class="fe fe-user"></i></span>Avatars</a>
-<a href="./static/site_original_template/docs/buttons.html" class="list-group-item list-group-item-action"><span class="icon mr-3"><i class="fe fe-plus-square"></i></span>Buttons</a>
-<a href="./static/site_original_template/docs/colors.html" class="list-group-item list-group-item-action"><span class="icon mr-3"><i class="fe fe-feather"></i></span>Colors</a>
-<a href="./static/site_original_template/docs/cards.html" class="list-group-item list-group-item-action"><span class="icon mr-3"><i class="fe fe-image"></i></span>Cards</a>
-<a href="./static/site_original_template/docs/charts.html" class="list-group-item list-group-item-action"><span class="icon mr-3"><i class="fe fe-pie-chart"></i></span>Charts</a>
-<a href="./static/site_original_template/docs/form-components.html" class="list-group-item list-group-item-action"><span class="icon mr-3"><i class="fe fe-check-square"></i></span>Form components</a>
-<a href="./static/site_original_template/docs/tags.html" class="list-group-item list-group-item-action"><span class="icon mr-3"><i class="fe fe-tag"></i></span>Tags</a>
-<a href="./static/site_original_template/docs/typography.html" class="list-group-item list-group-item-action"><span class="icon mr-3"><i class="fe fe-type"></i></span>Typography</a>{{ end }}
+{{ define "rightMenu" }}
+{{ range .RightMenu }}
+<a href="{{ .Link }}" class="list-group-item list-group-item-action{{ if eq .Active true }}active{{ end }}"><span class="icon mr-3"><i class="{{ .Icon }}"></i></span>{{ .Text }}</a>
+{{ end }}
+{{ end }}
