@@ -1,0 +1,12 @@
+{{ define "mainMenu" }}<ul class="nav nav-tabs border-0 flex-column flex-lg-row">
+  {{ range .MainMenu }}
+  <li class="nav-item">
+    <a href="javascript:void(0)" class="nav-link" data-toggle="dropdown"><i class="{{ .Icon }}"></i> {{ .Label }}</a>
+    <div class="dropdown-menu dropdown-menu-arrow">
+      {{ range .SubMenu }}
+      <a href="{{ .Link }}" class="dropdown-item ">{{ .Label }}</a>
+      {{ end }}
+    </div>
+  </li>
+  {{ end }}
+</ul>{{ end }}

@@ -324,14 +324,91 @@ func tplFunc(w rpx.ProxyResponseWriter, r *rpx.ProxyRequest) {
 		"CopyrightYear": "2018",
 		"CopyrightLink": "",
 		"CopyrightName": "Helmut Kemper",
+		"MainMenu": []map[string]interface{}{
+			{
+				"Icon":  "fe fe-activity",
+				"Label": "Menu 1",
+				"SubMenu": []map[string]interface{}{
+					{
+						"Link":  "#",
+						"Label": "um",
+					},
+					{
+						"Link":  "#",
+						"Label": "Dois",
+					},
+					{
+						"Link":  "#",
+						"Label": "Tres",
+					},
+				},
+			},
+			{
+				"Icon":  "fe fe-airplay",
+				"Label": "Menu 2",
+				"SubMenu": []map[string]interface{}{
+					{
+						"Link":  "#",
+						"Label": "quatro",
+					},
+					{
+						"Link":  "#",
+						"Label": "cinco",
+					},
+					{
+						"Link":  "#",
+						"Label": "seis",
+					},
+				},
+			},
+			{
+				"Icon":  "fe fe-alert-circle",
+				"Label": "Menu 3",
+				"SubMenu": []map[string]interface{}{
+					{
+						"Link":  "#",
+						"Label": "sete",
+					},
+					{
+						"Link":  "#",
+						"Label": "oito",
+					},
+					{
+						"Link":  "#",
+						"Label": "nove",
+					},
+				},
+			},
+		},
 	}
 
-	tmpl := template.Must(template.New("index").ParseFiles(
-		"/home/hkemper/Dropbox/site_pessoal/static/site_original_template/docs/index.tmpl",
-		"/home/hkemper/Dropbox/site_pessoal/static/site_original_template/docs/bell.tmpl",
-		"/home/hkemper/Dropbox/site_pessoal/static/site_original_template/docs/mainMenu.tmpl",
-	),
+	var fns = template.FuncMap{
+		"last": func(x int, a interface{}) bool {
+			return x == reflect.ValueOf(a).Len()-1
+		},
+		"nLast": func(x int, a interface{}) bool {
+			return x != reflect.ValueOf(a).Len()-1
+		},
+		"htmlSafe": func(str string) template.HTML {
+			return template.HTML(str)
+		},
+		"js": func(str string) template.JS {
+			return template.JS(str)
+		},
+	}
+
+	tmpl := template.Must(
+		template.New("index").Funcs(fns).ParseFiles(
+			"/home/hkemper/Dropbox/site_pessoal/static/site_original_template/docs/index.tmpl",
+			"/home/hkemper/Dropbox/site_pessoal/static/site_original_template/docs/index/mainMenu.tmpl",
+			"/home/hkemper/Dropbox/site_pessoal/static/site_original_template/docs/index/searchForm.tmpl",
+			"/home/hkemper/Dropbox/site_pessoal/static/site_original_template/docs/index/userMenu.tmpl",
+			"/home/hkemper/Dropbox/site_pessoal/static/site_original_template/docs/index/bell.tmpl",
+			"/home/hkemper/Dropbox/site_pessoal/static/site_original_template/docs/index/admin.tmpl",
+			"/home/hkemper/Dropbox/site_pessoal/static/site_original_template/docs/index/rightMenu.tmpl",
+		),
 	)
+
 	err := tmpl.ExecuteTemplate(w, "index", &data)
 	if err != nil {
 		fmt.Printf("template.error: %v", err.Error())
