@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JSON Serialization - GeoJSON to geometries</title>
+<style type="text/css">
+  html,body{margin:0px;height:100%;width:100%}
+  .container{width:100%;height:100%}
+  .content{background:rgba(135,196,240, 0.8);width:200px;height:100px;border:2px #fff solid;padding:10px;color:#fff}
+  .content input{color:#bbb}
+  .content a{color:#fff;float:right;margin-right:15px}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maptalks@0.41.1/dist/maptalks.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/maptalks@0.41.1/dist/maptalks.min.js"></script>
+<body>
+
+<div id="map" class="container"></div>
+<script>
+  var map = new maptalks.Map('map', {
+    center: [-54.7760428,-27.9563985],
+    zoom: 8,
+    baseLayer: new maptalks.TileLayer('base', {
+      urlTemplate: 'http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
+      subdomains: ['a','b','c','d'],
+      attribution: '&copy; <a href="http://osm.org">OpenStreetMap</a> contributors, &copy; <a href="https://carto.com/">CARTO</a>'
+    }),
+    layers : [
+      new maptalks.VectorLayer('v')
+    ]
+  });
+
+  var customPanel = new maptalks.control.Panel({
+    'position'      : 'bottom-right',
+    'draggable'     : true,
+    'custom'        : true,
+    'content'       : '<div class="content">' +
+        'A custom panel.<br>' +
+        '<input type="text" height=10 value="a text input"/><br>' +
+        '<br><a href="javascript:;" onclick="hide()">close</a>' +
+        '</div>'
+  });
+  map.addControl(customPanel);
+
+  let xhr = new XMLHttpRequest();
+  xhr.open('GET', "../../../static/tangram/demos/data/simple.geojson");
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.onload = function() {
+    if (xhr.status === 200) {
+      var geo = JSON.parse(xhr.responseText)
+      for( var i in geo.features ){
+        console.log( geo.features[i] );
+        let marker = maptalks.GeoJSON.toGeometry( geo.features[i] ).addTo(map.getLayer('v'));
+      }
+
+    }
+  };
+  xhr.send();
+
+</script>
+</body>
+</html>
