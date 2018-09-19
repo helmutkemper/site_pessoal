@@ -35,26 +35,34 @@
     'custom'        : true,
     'content'       : '<div class="content">' +
         'A custom panel.<br>' +
-        '<input type="text" height=10 value="a text input"/><br>' +
-        '<br><a href="javascript:;" onclick="hide()">close</a>' +
+        '<form>' +
+        '<input name="filterText" type="text" height=10 value=""/><br>' +
+        '<button value="filter" onclick="loadFromServer(this.form.filterText.value); return false;">filter</button> ' +
+        '</form>' +
         '</div>'
   });
   map.addControl(customPanel);
 
-  let xhr = new XMLHttpRequest();
-  xhr.open('GET', "../../../static/tangram/demos/data/simple.geojson");
-  xhr.setRequestHeader('Content-Type', 'application/json');
-  xhr.onload = function() {
-    if (xhr.status === 200) {
-      var geo = JSON.parse(xhr.responseText)
-      for( var i in geo.features ){
-        console.log( geo.features[i] );
-        let marker = maptalks.GeoJSON.toGeometry( geo.features[i] ).addTo(map.getLayer('v'));
-      }
 
-    }
-  };
-  xhr.send();
+
+  function loadFromServer(text) {
+console.log(text);
+    let xhr = new XMLHttpRequest();
+    xhr.open('GET', "../../../static/tangram/demos/data/simple.geojson");
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.onload = function() {
+      if (xhr.status === 200) {
+        var geo = JSON.parse(xhr.responseText)
+        for( var i in geo.features ){
+          console.log( geo.features[i] );
+          let marker = maptalks.GeoJSON.toGeometry( geo.features[i] ).addTo(map.getLayer('v'));
+        }
+
+      }
+    };
+    xhr.send();
+    return false
+  }
 
 </script>
 </body>
