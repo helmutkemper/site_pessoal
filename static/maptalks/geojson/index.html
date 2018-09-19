@@ -9,6 +9,12 @@
   .content{background:rgba(135,196,240, 0.8);width:200px;height:100px;border:2px #fff solid;padding:10px;color:#fff}
   .content input{color:#bbb}
   .content a{color:#fff;float:right;margin-right:15px}
+
+  #editor{
+
+    height: 600px;
+    border: 1px solid #eeeeee;
+  }
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maptalks@0.41.1/dist/maptalks.css">
 <link href="../../../static/kendoui/examples/content/shared/styles/examples-offline.css" rel="stylesheet">
@@ -47,6 +53,9 @@
       '<h4>Data source</h4>' +
       '<input id="dropdowntree" />' +
       '</div>' +
+			'<div class="k-content">' +
+
+      '</div>' +
 			'</div>'
   });
   map.addControl(customPanel);
@@ -71,12 +80,11 @@
       title: "Select data",
       visible: false,
       actions: [
-        "Pin",
+        //"Pin",
         "Minimize",
         "Maximize",
         //"Close"
-      ],
-      close: onClose
+      ]
     }).data("kendoWindow").center().open();
 
     $("#dropdowntree").kendoDropDownTree({
@@ -92,6 +100,30 @@
         }
       ]
     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   });
 
