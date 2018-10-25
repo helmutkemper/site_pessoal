@@ -6,6 +6,6 @@ import (
 )
 
 func timeMeasure(start time.Time, name string) {
-	elapsed := time.Since(start)
+	elapsed := NetworkTime.Since(start)
 	log.Infof("%s: %s", name, elapsed)
 }

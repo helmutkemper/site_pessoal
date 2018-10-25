@@ -71,7 +71,10 @@ func runJsCodeOnLoad() {
 		return
 	}
 
-	js.RunJavaScriptCode(codeName, jsData[0]["code"].(string))
+	err := js.RunJavaScriptCode(codeName, jsData[0]["code"].(string))
+	if err != nil {
+		log.Errorf("JavaScript error: %s", err.Error())
+	}
 }
 
 func initCodeJsOnDb(force bool) {
@@ -229,9 +232,12 @@ func updateData(w rpx.ProxyResponseWriter, r *rpx.ProxyRequest) {
 	output := rpx.JSonOutStt{}
 
 	raw, err := ioutil.ReadAll(r.R.Body)
+	if err != nil {
+		log.Criticalf("updateData.ioutil.ReadAll.error: %v\n", err.Error())
+	}
 	rawMap := make(map[string]interface{})
 
-	json.Unmarshal(raw, &rawMap)
+	err = json.Unmarshal(raw, &rawMap)
 	if err != nil {
 		log.Criticalf("updateData.json.Unmarshal.error: %v\n", err.Error())
 		output.ToOutput(1, err, []int{}, w)
@@ -857,12 +863,18 @@ func main() {
 	//js.CronSupport.Start()
 
 	if _, err = os.Stat("./static"); os.IsNotExist(err) {
-		os.Mkdir("./static", 0755)
+		err = os.Mkdir("./static", 0755)
+		if err != nil {
+			log.Errorf("main.os.Mkdir.static.error: %v", err.Error())
+		}
 	}
 
-	log.Criticalf("listen and server: %v", rpx.ProxyRootConfig.ListenAndServe)
+	log.Infof("listen and server: %v", rpx.ProxyRootConfig.ListenAndServe)
 
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("./static"))))
 	http.HandleFunc("/", rpx.ProxyFunc)
-	http.ListenAndServe(rpx.ProxyRootConfig.ListenAndServe, nil)
+	err = http.ListenAndServe(rpx.ProxyRootConfig.ListenAndServe, nil)
+	if err != nil {
+		log.Errorf("main.http.ListenAndServe.error: %v", err.Error())
+	}
 }
