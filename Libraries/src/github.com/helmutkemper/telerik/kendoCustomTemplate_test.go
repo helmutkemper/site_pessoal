@@ -76,7 +76,7 @@ func ExampleGetTemplate() {
         display: inline-block;
         width: 32px;
         height: 32px;
-        border-radius: 50%;
+        border-radius: 50%%;
         background-size: 32px 35px;
         background-position: center center;
         vertical-align: middle;
@@ -111,7 +111,7 @@ func ExampleGetTemplate() {
 
 func ExampleIdea() {
 
-	dataSource := KendoDataSource{
+	dataSource := &KendoDataSource{
 		//VarName: "exposedPortsDataSource",
 		Schema: KendoSchema{
 			Model: KendoDataModel{
@@ -131,30 +131,30 @@ func ExampleIdea() {
 		},
 	}
 
-	dialogWindow := HtmlElementScript{
+	dialogWindow := &HtmlElementScript{
 		Global: HtmlGlobalAttributes{
 			Id: "containerCreateTemplateExposedPortsAddNewPort",
 		},
 		Type: SCRIPT_TYPE_KENDO_TEMPLATE,
 		Content: Content{
 
-			HtmlElementDiv{
+			&HtmlElementDiv{
 				Global: HtmlGlobalAttributes{
 					Id: "spanCreateTemplateExposedPortsAddNewPort",
 				},
 				Content: Content{
 
-					HtmlElementDiv{
+					&HtmlElementDiv{
 						Content: Content{
 
-							HtmlElementFormLabel{
+							&HtmlElementFormLabel{
 								For: "ExposedPortsNumber",
 								Content: Content{
 									"Port number",
 								},
 							},
 
-							KendoUiNumericTextBox{
+							&KendoUiNumericTextBox{
 								Html: HtmlInputNumber{
 									Name:         "ExposedPortsNumber",
 									PlaceHolder:  "",
@@ -172,17 +172,17 @@ func ExampleIdea() {
 								Format: "#",
 							},
 
-							HtmlElementDiv{
+							&HtmlElementDiv{
 								Content: Content{
 
-									HtmlElementFormLabel{
+									&HtmlElementFormLabel{
 										For: "ExposedPortsProtocol",
 										Content: Content{
 											"Port protocol",
 										},
 									},
 
-									KendoUiComboBox{
+									&KendoUiComboBox{
 										Html: HtmlElementFormSelect{
 											Global: HtmlGlobalAttributes{
 												Id:    "ExposedPortsProtocol",
@@ -219,14 +219,14 @@ func ExampleIdea() {
 
 			dataSource,
 
-			HtmlElementScript{
+			&HtmlElementScript{
 				Global: HtmlGlobalAttributes{
 					Id: "containerHostExposedPortsFooterTemplate",
 				},
 				Type: SCRIPT_TYPE_KENDO_TEMPLATE,
 				Content: Content{
 
-					HtmlElementFormButton{
+					&HtmlElementFormButton{
 						Global: HtmlGlobalAttributes{
 							Id:      "buttonHostExposedPortsFooterTemplate",
 							Class:   "k-button k-primary centerText",
@@ -239,7 +239,7 @@ func ExampleIdea() {
 				},
 			},
 
-			HtmlElementScript{
+			&HtmlElementScript{
 				Type: SCRIPT_TYPE_JAVASCRIPT,
 				Content: Content{
 
@@ -247,14 +247,14 @@ func ExampleIdea() {
 				},
 			},
 
-			HtmlElementScript{
+			&HtmlElementScript{
 				Global: HtmlGlobalAttributes{
 					Id: "containerHostExposedPortsTemplate",
 				},
 				Type: SCRIPT_TYPE_KENDO_TEMPLATE,
 				Content: Content{
 
-					HtmlElementSpan{
+					&HtmlElementSpan{
 						Content: Content{
 							"containerHostExposedPortsTemplate",
 						},
@@ -264,14 +264,14 @@ func ExampleIdea() {
 
 			dialogWindow,
 
-			HtmlElementScript{
+			&HtmlElementScript{
 				Global: HtmlGlobalAttributes{
 					Id: "containerHostExposedPortsNoDataTemplate",
 				},
 				Type: SCRIPT_TYPE_KENDO_TEMPLATE,
 				Content: Content{
 
-					HtmlElementDiv{
+					&HtmlElementDiv{
 						Global: HtmlGlobalAttributes{
 							Id: "divExposedPortsFooterTemplate",
 						},
@@ -282,7 +282,7 @@ func ExampleIdea() {
 				},
 			},
 
-			KendoUiMultiSelect{
+			&KendoUiMultiSelect{
 				Html: HtmlElementFormSelect{
 					Global: HtmlGlobalAttributes{
 						Id: "containerHostExposedPorts",
@@ -304,7 +304,7 @@ func ExampleIdea() {
 				DataSource:     dataSource,
 			},
 
-			KendoUiDialog{
+			&KendoUiDialog{
 				Html: HtmlElementDiv{
 					Global: HtmlGlobalAttributes{
 						Id: "containerHostExposedPortsAddNewPort",
@@ -551,7 +551,7 @@ func ExampleSoUmTest() {
 						ClearButton:    FALSE,
 						DataValueField: "id",
 						DataTextField:  "ExposedPortsShow",
-						DataSource: KendoDataSource{
+						DataSource: &KendoDataSource{
 							//Type: KENDO_TYPE_DATA_JSON,
 							Transport: KendoTransport{
 								Read: KendoRead{
@@ -900,7 +900,7 @@ func ExampleSoUmTest() {
 						},
 						DataTextField: "ExposedPortsShow",
 						ClearButton:   FALSE,
-						DataSource: KendoDataSource{
+						DataSource: &KendoDataSource{
 							//VarName: "testDataSource",
 							//Type: KENDO_TYPE_DATA_JSON,
 							Transport: KendoTransport{

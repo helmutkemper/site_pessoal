@@ -1066,7 +1066,7 @@ func (el *ToJavaScriptConverter) ToTelerikJavaScript(element reflect.Value) ([]b
 				buffer.Write(convertedFromInterface.ToJavaScript())
 				buffer.WriteString(`},`)
 
-			case KendoDataSource:
+			case *KendoDataSource:
 				if reflect.DeepEqual(convertedFromInterface, KendoDataSource{}) == true {
 					continue
 				}

@@ -159,7 +159,7 @@ func ExampleKendoUiGrid_ToHtml_6() {
 			{Command: []TypeKendoGridColumnsCommand{COLUMNS_COMMAND_EDIT}},
 		},
 
-		DataSource: KendoDataSource{
+		DataSource: &KendoDataSource{
 			Data: []map[string]interface{}{
 				{"name": "Jane Doe", "age": 30},
 				{"name": "John Doe", "age": 33},
@@ -203,7 +203,7 @@ func ExampleKendoUiGrid_ToHtml_7() {
 		Excel: KendoGridExcel{
 			AllPages: TRUE,
 		},
-		DataSource: KendoDataSource{
+		DataSource: &KendoDataSource{
 			Data: []map[string]interface{}{
 				{"name": "Jane Doe", "age": 30},
 				{"name": "John Doe", "age": 33},
@@ -255,7 +255,7 @@ func ExampleKendoUiGrid_ToHtml_8() {
 		Excel: KendoGridExcel{
 			AllPages: TRUE,
 		},
-		DataSource: KendoDataSource{
+		DataSource: &KendoDataSource{
 			Data: []map[string]interface{}{
 				{"name": "Jane Doe", "age": 30},
 				{"name": "John Doe", "age": 33},
@@ -307,7 +307,7 @@ func ExampleKendoUiGrid_ToHtml_9() {
 		Excel: KendoGridExcel{
 			AllPages: TRUE,
 		},
-		DataSource: KendoDataSource{
+		DataSource: &KendoDataSource{
 			Data: []map[string]interface{}{
 				{"name": "Jane Doe", "age": 30},
 				{"name": "John Doe", "age": 33},
@@ -370,7 +370,7 @@ func ExampleKendoUiGrid_ToHtml_10() {
 		Excel: KendoGridExcel{
 			AllPages: TRUE,
 		},
-		DataSource: KendoDataSource{
+		DataSource: &KendoDataSource{
 			Data: []map[string]interface{}{
 				{"name": "Jane Doe", "age": 30},
 				{"name": "John Doe", "age": 33},
@@ -438,7 +438,7 @@ func ExampleKendoUiGrid_ToHtml_11() {
 		Excel: KendoGridExcel{
 			AllPages: TRUE,
 		},
-		DataSource: KendoDataSource{
+		DataSource: &KendoDataSource{
 			Data: []map[string]interface{}{
 				{"name": "Jane Doe", "age": 30},
 				{"name": "John Doe", "age": 33},
@@ -479,7 +479,7 @@ func ExampleKendoUiGrid_ToHtml_12() {
 				Title: "Name",
 				Filterable: KendoGridColumnsFilterable{
 					Cell: KendoGridColumnsCell{
-						DataSource: KendoDataSource{
+						DataSource: &KendoDataSource{
 							Data: []map[string]interface{}{
 								{"someField": "Jane"},
 								{"someField": "Jake"},
@@ -522,7 +522,7 @@ func ExampleKendoUiGrid_ToHtml_12() {
 		Excel: KendoGridExcel{
 			AllPages: TRUE,
 		},
-		DataSource: KendoDataSource{
+		DataSource: &KendoDataSource{
 			Data: []map[string]interface{}{
 				{"name": "Jane Doe", "age": 30},
 				{"name": "John Doe", "age": 33},
@@ -594,7 +594,7 @@ func ExampleKendoUiGrid_ToHtml_13() {
 		Excel: KendoGridExcel{
 			AllPages: TRUE,
 		},
-		DataSource: KendoDataSource{
+		DataSource: &KendoDataSource{
 			Data: []map[string]interface{}{
 				{"name": "Jane Doe", "age": 30},
 				{"name": "John Doe", "age": 33},
@@ -643,7 +643,7 @@ func ExampleKendoUiGrid_ToHtml_14() {
 			Columns: FALSE,
 		},
 		Sortable: TRUE,
-		DataSource: KendoDataSource{
+		DataSource: &KendoDataSource{
 			Data: []map[string]interface{}{
 				{"name": "Jane Doe", "age": 30},
 				{"name": "John Doe", "age": 33},
@@ -712,7 +712,7 @@ func ExampleKendoUiGrid_ToHtml_15() {
 		Excel: KendoGridExcel{
 			AllPages: TRUE,
 		},
-		DataSource: KendoDataSource{
+		DataSource: &KendoDataSource{
 			Data: []map[string]interface{}{
 				{"name": "Jane Doe", "age": 30},
 				{"name": "John Doe", "age": 33},
@@ -783,7 +783,7 @@ func ExampleKendoUiGrid_ToHtml_16() {
 		Excel: KendoGridExcel{
 			AllPages: TRUE,
 		},
-		DataSource: KendoDataSource{
+		DataSource: &KendoDataSource{
 			Data: []map[string]interface{}{
 				{"name": "Jane Doe", "age": 30},
 				{"name": "John Doe", "age": 33},
@@ -859,7 +859,7 @@ func ExampleKendoUiGrid_ToHtml_17() {
 		Excel: KendoGridExcel{
 			AllPages: TRUE,
 		},
-		DataSource: KendoDataSource{
+		DataSource: &KendoDataSource{
 			Data: []map[string]interface{}{
 				{"name": "Jane Doe", "age": 30},
 				{"name": "John Doe", "age": 33},
@@ -937,7 +937,7 @@ func ExampleKendoUiGrid_ToHtml_18() {
 		Excel: KendoGridExcel{
 			AllPages: TRUE,
 		},
-		DataSource: KendoDataSource{
+		DataSource: &KendoDataSource{
 			Data: []map[string]interface{}{
 				{"name": "Jane Doe", "age": 30},
 				{"name": "John Doe", "age": 33},
@@ -1055,7 +1055,7 @@ func ExampleKendoUiGrid_ToHtml_19() {
 		Excel: KendoGridExcel{
 			AllPages: TRUE,
 		},
-		DataSource: KendoDataSource{
+		DataSource: &KendoDataSource{
 			Data: []map[string]interface{}{
 				{"name": "Jane Doe", "age": 30},
 				{"name": "John Doe", "age": 33},

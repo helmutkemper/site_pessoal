@@ -8,13 +8,13 @@ func ExampleHtmlElementFormFieldSet_ToHtml() {
 			Id: "fieldSetId",
 		},
 		Content: Content{
-			HtmlElementFormLabel{
+			&HtmlElementFormLabel{
 				Form: "name",
 				Content: Content{
 					"label_1",
 				},
 			},
-			HtmlInputText{
+			&HtmlInputText{
 				Global: HtmlGlobalAttributes{
 					Id: "name",
 				},

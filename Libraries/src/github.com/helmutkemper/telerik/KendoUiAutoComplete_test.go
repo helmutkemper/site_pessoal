@@ -137,7 +137,7 @@ func ExampleKendoUiAutoComplete_ToJavaScript_3() {
 				Id: "auto_complete",
 			},
 		},
-		DataSource: KendoDataSource{
+		DataSource: &KendoDataSource{
 			Aggregate: []KendoAggregates{
 				{
 					Aggregate: AGGREGATE_SUM,

@@ -9,13 +9,13 @@ func ExampleHtmlElementDiv_ToHtml() {
 			Class: "test",
 		},
 		Content: Content{
-			HtmlElementFormLabel{
+			&HtmlElementFormLabel{
 				Form: "name",
 				Content: Content{
 					"label_1",
 				},
 			},
-			HtmlInputText{
+			&HtmlInputText{
 				Global: HtmlGlobalAttributes{
 					Id: "name",
 				},

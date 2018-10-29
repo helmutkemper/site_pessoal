@@ -111,7 +111,7 @@ func (el Content) ToHtml() []byte {
 			buffer.Write(outConverted.ToHtml())
 		case *HtmlElementUl:
 			buffer.Write(outConverted.ToHtml())
-		case KendoDataSource:
+		case *KendoDataSource:
 			//do noting
 
 		case *HtmlInputCheckBox:
@@ -497,6 +497,8 @@ func (el *Content) addToUnprocessedList(contentUnprocessedList, contentFoundList
 	case *KendoDataSource:
 		*contentFoundList = append(*contentFoundList, &converted)
 	case *AceEditor:
+		*contentFoundList = append(*contentFoundList, &converted)
+	case *KendoUiDialog:
 		*contentFoundList = append(*contentFoundList, &converted)
 
 		// Elementos de formulário que necessitam de javascript - fim
