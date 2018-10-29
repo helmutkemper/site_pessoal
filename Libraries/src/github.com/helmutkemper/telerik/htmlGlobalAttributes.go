@@ -246,8 +246,12 @@ type HtmlGlobalAttributes struct {
 func (el *HtmlGlobalAttributes) ToHtml() []byte {
 	var buffer bytes.Buffer
 
-	if el.Id == "" {
-		el.Id = GetAutoId()
+	if el.Id != "-" {
+		if el.Id == "" {
+			el.Id = GetAutoId()
+		}
+	} else {
+		el.Id = ""
 	}
 
 	element := reflect.ValueOf(el).Elem()

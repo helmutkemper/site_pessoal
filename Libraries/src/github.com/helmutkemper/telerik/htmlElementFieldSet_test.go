@@ -9,6 +9,9 @@ func ExampleHtmlElementFormFieldSet_ToHtml() {
 		},
 		Content: Content{
 			&HtmlElementFormLabel{
+				Global: HtmlGlobalAttributes{
+					Id: "-",
+				},
 				Form: "name",
 				Content: Content{
 					"label_1",

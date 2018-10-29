@@ -4,6 +4,9 @@ import "fmt"
 
 func ExampleHtmlElementFormLabel_String() {
 	el := HtmlElementFormLabel{
+		Global: HtmlGlobalAttributes{
+			Id: "-",
+		},
 		Form: "name",
 		Content: Content{
 			"Name",

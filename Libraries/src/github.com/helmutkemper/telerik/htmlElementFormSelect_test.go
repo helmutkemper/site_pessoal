@@ -4,6 +4,9 @@ import "fmt"
 
 func ExampleHtmlElementFormSelect_ToHtml() {
 	el := HtmlElementFormSelect{
+		Global: HtmlGlobalAttributes{
+			Id: "-",
+		},
 		Name: "selectName",
 		Options: []HtmlOptions{
 			{

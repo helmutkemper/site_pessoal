@@ -4,6 +4,9 @@ import "fmt"
 
 func ExampleHtmlOptGroup_ToHtml() {
 	el := HtmlOptGroup{
+		Global: HtmlGlobalAttributes{
+			Id: "-",
+		},
 		Label: "Group Label",
 		Options: []HtmlOptions{
 			{
