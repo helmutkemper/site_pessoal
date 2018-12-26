@@ -1,3 +1,5 @@
+//https://demos.telerik.com/kendo-ui/grid/detailtemplate
+
 package main
 
 import (
