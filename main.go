@@ -857,8 +857,8 @@ func main() {
 		},
 	)
 
-	rpx.ProxyRootConfig.ListenConfig(":8080")
-	//rpx.ProxyRootConfig.Prepare()
+	rpx.ProxyRootConfig.ListenConfig(":8888")
+	rpx.ProxyRootConfig.Prepare()
 
 	//js.CronSupport.Start()
 

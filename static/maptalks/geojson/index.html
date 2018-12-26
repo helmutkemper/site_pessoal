@@ -15,6 +15,7 @@
     height: 600px;
     border: 1px solid #eeeeee;
   }
+
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maptalks@0.41.1/dist/maptalks.css">
 <link href="../../../static/kendoui/examples/content/shared/styles/examples-offline.css" rel="stylesheet">
@@ -27,6 +28,11 @@
 <script src="../../../static/kendoui/js/kendo.all.min.js"></script>
 <script src="../../../static/kendoui/examples/content/shared/js/console.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/maptalks@0.41.1/dist/maptalks.min.js"></script>
+<style>
+	.k-window-content{
+		padding: 0px 0px;
+	}
+</style>
 <body>
 
 <div id="map" class="container"></div>
@@ -49,14 +55,8 @@
     'draggable'     : true,
     'custom'        : true,
     'content'       : '<div id="window">' +
-			'<div class="k-content">' +
-      '<h4>Data source</h4>' +
-      '<input id="dropdowntree" />' +
-      '</div>' +
-			'<div class="k-content">' +
-
-      '</div>' +
-			'</div>'
+			'<div id="grid"></div>' +
+      '</div>'
   });
   map.addControl(customPanel);
 
@@ -75,30 +75,50 @@
     }
 
     myWindow.kendoWindow({
-      width: "600px",
-      height: "600px",
-      title: "Select data",
+      width: "800px",
+      height: "551px",
+      title: "Endpoints",
       visible: false,
+      scrollable: false,
+      resizable: false,
       actions: [
         //"Pin",
-        "Minimize",
-        "Maximize",
+        //"Minimize",
+        //"Maximize",
         //"Close"
       ]
     }).data("kendoWindow").center().open();
 
-    $("#dropdowntree").kendoDropDownTree({
-      placeholder: "Select ...",
-      height: "auto",
+    $("#grid").kendoGrid({
       dataSource: [
+				{
+				  host: 'site.com',
+					path: 'user'
+				}
+			],
+      height: 550,
+      groupable: false,
+      sortable: true,
+      pageable: {
+        refresh: true,
+        pageSizes: true,
+        buttonCount: 5
+      },
+      detailInit: detailInit,
+      /*dataBound: function() {
+        this.expandRow(this.tbody.find("tr.k-master-row").first());
+      }*/
+      columns: [
         {
-          text: "OpenStreetMaps", expanded: true, items: [
-            { text: "Nodes" },
-            { text: "Ways" },
-            { text: "Collections" }
-          ]
+          field: "host",
+          title: "Host",
+          width: 240
+        },
+        {
+          field: "path",
+          title: "Path"
         }
-      ]
+			]
     });
 
 
@@ -125,7 +145,30 @@
 
 
 
+
   });
+
+  function detailInit(e) {
+    $("<div/>").appendTo(e.detailCell).kendoGrid({
+      dataSource: [
+				{
+          OrderID: 10,
+          ShipCountry: 'Brazil',
+          ShipAddress: 'Rua da Flores',
+          ShipName: 'Kemper'
+				}
+			],
+      scrollable: false,
+      sortable: true,
+      pageable: true,
+      columns: [
+        { field: "OrderID", width: "110px" },
+        { field: "ShipCountry", title:"Ship Country", width: "110px" },
+        { field: "ShipAddress", title:"Ship Address" },
+        { field: "ShipName", title: "Ship Name", width: "300px" }
+      ]
+    });
+  }
 
   function loadFromServer(text) {
 console.log(text);
